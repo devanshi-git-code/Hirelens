@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Candidate Details | HireLens</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div class="candidate-container">
+
+        <h1>Full Mock Interview</h1>
+
+        <p>
+            Tell us about yourself so HireLens can personalize your interview.
+        </p>
+
+        <form action="/candidate" method="POST" enctype="multipart/form-data">
+
+            <!-- Full Name -->
+            <div>
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <!-- Course / Branch -->
+            <div>
+                <label for="course">Course / Branch</label>
+
+                <input
+                    type="text"
+                    id="course"
+                    name="course"
+                    placeholder="Example: B.Tech CSE"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <!-- Target Role -->
+            <div>
+                <label for="role">Target Job Role</label>
+
+                <input
+                    type="text"
+                    id="role"
+                    name="role"
+                    placeholder="Example: Software Developer"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <!-- Experience Level -->
+            <div>
+                <label for="experience">Experience Level</label>
+
+                <select id="experience" name="experience" required>
+
+                    <option value="">Select your experience</option>
+                    <option value="fresher">Fresher</option>
+                    <option value="internship">Internship Experience</option>
+                    <option value="0-1">0–1 Year</option>
+                    <option value="1-3">1–3 Years</option>
+
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Resume -->
+            <div>
+                <label for="resume">Upload Resume (PDF)</label>
+
+                <input
+                    type="file"
+                    id="resume"
+                    name="resume"
+                    accept=".pdf"
+                    required
+                >
+            </div>
+
+            <br><br>
+
+            <button type="submit">
+                Continue to Interview
+            </button>
+
+        </form>
+
+        <br>
+
+        <a href="/">← Back to Home</a>
+
+    </div>
+
+</body>
+
+</html>
