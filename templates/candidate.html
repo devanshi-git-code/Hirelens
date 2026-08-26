@@ -86,13 +86,31 @@
             <div>
                 <label for="experience">Experience Level</label>
 
-                <select id="experience" name="experience" required>
+                <select
+                    id="experience"
+                    name="experience"
+                    required
+                >
 
-                    <option value="">Select your experience</option>
-                    <option value="fresher">Fresher</option>
-                    <option value="internship">Internship Experience</option>
-                    <option value="0-1">0–1 Year</option>
-                    <option value="1-3">1–3 Years</option>
+                    <option value="">
+                        Select your experience
+                    </option>
+
+                    <option value="fresher">
+                        Fresher
+                    </option>
+
+                    <option value="internship">
+                        Internship Experience
+                    </option>
+
+                    <option value="0-1">
+                        0–1 Year
+                    </option>
+
+                    <option value="1-3">
+                        1–3 Years
+                    </option>
 
                 </select>
             </div>
@@ -101,7 +119,9 @@
 
             <!-- Resume -->
             <div>
-                <label for="resume">Upload Resume (PDF)</label>
+                <label for="resume">
+                    Upload Resume (PDF)
+                </label>
 
                 <input
                     type="file"
@@ -110,6 +130,33 @@
                     accept=".pdf"
                     required
                 >
+            </div>
+
+            <br>
+
+            <!-- Job Description -->
+            <div>
+
+                <label for="job_description">
+                    Job Description
+                    <span style="font-weight: normal;">
+                        (Optional)
+                    </span>
+                </label>
+
+                <textarea
+                    id="job_description"
+                    name="job_description"
+                    rows="7"
+                    placeholder="Paste the job description here (optional)..."
+                ></textarea>
+
+                <p style="font-size: 13px; color: #666; margin-top: 6px;">
+                    💡 Job Description is optional. It is recommended
+                    to provide a JD for more targeted and effective
+                    interview practice.
+                </p>
+
             </div>
 
             <br><br>
@@ -122,7 +169,9 @@
 
         <br>
 
-        <a href="/">← Back to Home</a>
+        <a href="/">
+            ← Back to Home
+        </a>
 
     </div>
 
